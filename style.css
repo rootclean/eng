@@ -399,7 +399,7 @@ html, body {
 
 /* === СЛАЙД С ФОНОМ === */
 .slide-bg {
-    background-image: url('images/litvin-bg.webp');
+    background-image: url('images/litvin-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
