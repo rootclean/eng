@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Life: Mikhail Litvin — Presentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Прогресс-бар внизу -->
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <!-- Счётчик слайдов -->
+    <div class="slide-counter">
+        <span id="currentSlide">1</span> / <span id="totalSlides">7</span>
+    </div>
+
+    <!-- Кнопки навигации -->
+    <button class="nav-btn prev" id="prevBtn" aria-label="Назад">‹</button>
+    <button class="nav-btn next" id="nextBtn" aria-label="Вперёд">›</button>
+
+    <!-- СЛАЙД 1: Титульный -->
+    <section class="slide active" id="slide-1">
+        <div class="slide-content center">
+            <p class="subtitle">TV Programme about a Celebrity</p>
+            <h1 class="main-title">STAR LIFE</h1>
+            <h2 class="celebrity-name">Mikhail Litvin</h2>
+            <div class="credits">
+                <p><span class="label">Made by:</span> Машинцев Юрий</p>
+                <p><span class="label">Presented by:</span> Тимофеева София</p>
+                <p><span class="label">Group:</span> 1ОИБТС-1226</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЛАЙД 2: Introduction -->
+    <section class="slide" id="slide-2">
+        <div class="slide-content">
+            <h2 class="slide-title">Introduction</h2>
+            <p class="slide-subtitle">Who is Mikhail Litvin?</p>
+            <ul class="facts">
+                <li>Russian <strong>YouTube blogger</strong>, streamer and entrepreneur.</li>
+                <li>Became famous for <strong>pranks</strong>, challenges and extreme stunts.</li>
+                <li>Born on <strong>November 30, 1999</strong> in Yuzhno-Sakhalinsk.</li>
+                <li>Started his YouTube career in <strong>2016</strong>.</li>
+                <li>One of the most discussed Russian content creators of his generation.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- СЛАЙД 3: Personal Information -->
+    <section class="slide" id="slide-3">
+        <div class="slide-content">
+            <h2 class="slide-title">Personal Information</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">Full name</span>
+                    <span class="info-value">Mikhail Andreevich Litvin</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Date of birth</span>
+                    <span class="info-value">November 30, 1999</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Age</span>
+                    <span class="info-value">26 years old</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Place of birth</span>
+                    <span class="info-value">Yuzhno-Sakhalinsk, Russia</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Nationality</span>
+                    <span class="info-value">Russian</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Current residence</span>
+                    <span class="info-value">Moscow, Russia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЛАЙД 4: Education & Profession -->
+    <section class="slide" id="slide-4">
+        <div class="slide-content">
+            <h2 class="slide-title">Education &amp; Profession</h2>
+            <div class="two-columns">
+                <div class="column">
+                    <h3>🎓 Education</h3>
+                    <p>Not publicly disclosed — <em>information not found</em>.</p>
+                </div>
+                <div class="column">
+                    <h3>💼 Profession</h3>
+                    <ul class="facts small">
+                        <li>Video blogger (YouTuber)</li>
+                        <li>Streamer</li>
+                        <li>Entrepreneur</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <p><strong>YouTube channel:</strong> «ЛИТВИН» — over <strong>8 million subscribers</strong></p>
+                <p><strong>Business projects:</strong> energy drink «Lit Energy», football club «Sakhalinets»</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЛАЙД 5: Appearance -->
+    <section class="slide" id="slide-5">
+        <div class="slide-content">
+            <h2 class="slide-title">Appearance</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">Height</span>
+                    <span class="info-value">175 cm</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Weight</span>
+                    <span class="info-value">60 kg</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Hair colour</span>
+                    <span class="info-value">Dark</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Eye colour</span>
+                    <span class="info-value">Not publicly specified</span>
+                </div>
+                <div class="info-item wide">
+                    <span class="info-label">Build</span>
+                    <span class="info-value">Athletic — played football in childhood</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЛАЙД 6: Interview Questions -->
+    <section class="slide" id="slide-6">
+        <div class="slide-content">
+            <h2 class="slide-title">Interview Questions</h2>
+            <p class="slide-subtitle">Facts we couldn't find — so we would ask:</p>
+            <ol class="questions">
+                <li>What is your educational background? Did you go to university?</li>
+                <li>What is your eye colour?</li>
+                <li>Could you tell us more about your family — your parents and your wife?</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- СЛАЙД 7: Thank you -->
+    <section class="slide" id="slide-7">
+        <div class="slide-content center">
+            <h2 class="main-title">Thank you</h2>
+            <p class="subtitle">for your attention!</p>
+            <p class="questions-note">Any questions?</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
