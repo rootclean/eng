@@ -12,7 +12,7 @@ let currentIndex = 0;
 // Установить общее количество слайдов
 totalSlidesEl.textContent = totalSlides;
 
-// === ПОКАЗ СЛАЙДА ===
+// ПОКАЗ СЛАЙДА
 function showSlide(index) {
     if (index < 0) index = 0;
     if (index >= totalSlides) index = totalSlides - 1;
@@ -26,7 +26,7 @@ function showSlide(index) {
     progressFill.style.width = ((index + 1) / totalSlides * 100) + '%';
 }
 
-// === НАВИГАЦИЯ ===
+// НАВИГАЦИЯ
 function nextSlide() {
     if (currentIndex < totalSlides - 1) showSlide(currentIndex + 1);
 }
@@ -35,11 +35,11 @@ function prevSlide() {
     if (currentIndex > 0) showSlide(currentIndex - 1);
 }
 
-// === КНОПКИ ===
+// КНОПКИ
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
 
-// === КЛАВИАТУРА ===
+// КЛАВИАТУРА
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
         e.preventDefault();
@@ -54,7 +54,7 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// === СВАЙПЫ (для телефона) ===
+// СВАЙПЫ (для телефона)
 let touchStartX = 0;
 let touchEndX = 0;
 
@@ -71,7 +71,7 @@ document.addEventListener('touchend', (e) => {
     }
 }, { passive: true });
 
-// === КОЛЕСО МЫШИ (осторожно, чтобы не срабатывало слишком часто) ===
+// КОЛЕСО МЫШИ
 let wheelLock = false;
 document.addEventListener('wheel', (e) => {
     if (wheelLock) return;
@@ -82,5 +82,5 @@ document.addEventListener('wheel', (e) => {
     else if (e.deltaY < 0) prevSlide();
 }, { passive: true });
 
-// === СТАРТ ===
+// СТАРТ
 showSlide(0);
