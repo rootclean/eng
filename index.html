@@ -5,9 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Life: Mikhail Litvin</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:wght@700;900&family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- АУДИО-ПЛЕЕР СВЕРХУ -->
+    <div class="audio-bar">
+        <audio id="litvinSong" src="audio/zhishi.mp3" preload="metadata"></audio>
+        <button id="playBtn" class="play-btn" aria-label="Play">▶</button>
+        <div class="track-info">
+            <span class="track-title">Жы Ши</span>
+            <span class="track-artist">ЛИТВИН</span>
+        </div>
+        <div class="progress-mini" id="progressMini">
+            <div class="progress-mini-fill" id="progressMiniFill"></div>
+        </div>
+    </div>
+
+    <!-- ИНТРО-ОВЕРЛЕЙ -->
+    <div class="intro-overlay" id="introOverlay">
+        <div class="intro-content">
+            <div class="intro-arrow">↑</div>
+            <p class="intro-text">
+                Вы можете включать песню<br>
+                автора <strong>«Жи Ши»</strong><br>
+                (версия без мата)
+            </p>
+        </div>
+    </div>
 
     <div class="progress-bar">
         <div class="progress-fill" id="progressFill"></div>
